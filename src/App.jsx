@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter, Switch, Route} from 'react-router-dom';
+import { Switch, Route, HashRouter} from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './store';
 import './App.css';
@@ -12,7 +12,7 @@ import Register from './components/auth/register';
 const App = () => {
     return (
         <Provider store={store}>
-            <BrowserRouter>
+            <HashRouter>
             <Header />
                 <Switch>
                     <Route exact path='/login' component={Login} />
@@ -20,7 +20,7 @@ const App = () => {
                     <Route exact path='/dashboard' component={Dashboard} />
                     <Route exact path='/' component={Landing} />
                 </Switch>
-            </BrowserRouter>
+            </HashRouter>
         </Provider>
     )
 }
