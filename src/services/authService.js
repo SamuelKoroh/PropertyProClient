@@ -1,6 +1,6 @@
 import http from './httpService';
 
-const BASE_URL = 'https://localhost:5001/api/auth';
+const BASE_URL = 'https://propertypro.azurewebsites.net/api/auth';
 const config = { headers: {'Content-Type': 'application/json', 'X-Tenant-Id': 'b0ed668d-7ef2-4a23-a333-94ad278f45d7'}};
 
 
